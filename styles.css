@@ -41,6 +41,7 @@ main {
     font-weight: 500;
     font-size: 2rem;
     width: 90%;
+    margin-bottom: 4rem;
 }
 form {
     font-size: 1.2rem;
@@ -70,6 +71,8 @@ form {
     border-radius: 4px;
     padding: 4px 0;
     border: 2px solid #495561;
+    padding: 8px;
+    color: var(--text-color)
 }
 .inputContainer input:focus {
     border-color: var(--input-on-focus);
@@ -84,8 +87,21 @@ form {
     border: 1px solid transparent;
     color: var(--text-color);
     background-color: #45688f;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
-
+.login {
+    text-transform: none;
+    font-size: 1.6rem;
+}
 .createButton button:hover {
     cursor: pointer;
+}
+.passwordAlert {
+    display: none;
+    color: red;
+    text-transform: none;
+}
+.error {
+    border-color: red;
 }

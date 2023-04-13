@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +11,20 @@
     <link rel="stylesheet" href="styles.css">
     <title>The Odin Project Form</title>
 </head>
+
 <body>
     <main class="main">
         <div class="background">
             <div class="logoContainer">
-                <img src="https://www.freepnglogos.com/uploads/among-us-png/among-us-purple-character-png-1.png" alt="Form Logo" width="0">
+                <img src="https://www.freepnglogos.com/uploads/among-us-png/among-us-purple-character-png-1.png"
+                    alt="Form Logo" width="0">
                 <!-- credits to Kalen Emsley -->
             </div>
         </div>
         <div class="formContainer">
             <div class="upperPart">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to</p>
             </div>
             <form action="#" novalidate>
@@ -28,30 +32,37 @@
                 <div class="form">
                     <div class="inputContainer">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" required >
+                        <input type="text" name="first-name" required placeholder="John">
                     </div>
                     <div class="inputContainer">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" required>
+                        <input type="text" name="last-name" required placeholder="Doe">
                     </div>
                     <div class="inputContainer">
                         <label for="email">Email</label>
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" required placeholder="john@mail.com">
                     </div>
                     <div class="inputContainer">
                         <label for="phnumber">Phone Number</label>
-                        <input type="number" name="phnumber" required>
+                        <input type="number" name="phnumber" required placeholder="999 888 777">
                     </div>
                     <div class="inputContainer">
                         <label for="password">Password</label>
-                        <input type="password" name="password" required>
+                        <input type="password" name="password" required placeholder="Password" id="password">
+                    </div>
+                    <div class="inputContainer">
+                        <label for="password">Confirm password</label>
+                        <input type="password" name="confirm-password"  id="confirm-password" required placeholder="Confirm Password" onkeyup="passValidation()">
+                        <p class="passwordAlert">*Passwords do not match</p>
                     </div>
                 </div>
                 <div class="createButton">
                     <button type="submit">Create account</button>
+                    <p class="login">Already have an account? <a href="#">Log in</a></p>
                 </div>
             </form>
         </div>
     </main>
 </body>
+<script src="./index.js" defer></script>
 </html>
